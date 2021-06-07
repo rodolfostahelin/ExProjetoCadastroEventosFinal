@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CadastroLocalActivity">
+
+    <TextView
+        android:id="@+id/textView_nomeLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Local de Eventos" />
+
+    <EditText
+        android:id="@+id/editText_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite o nome do local"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView_bairro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bairro" />
+
+    <EditText
+        android:id="@+id/editText_bairro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite o bairro"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView_cidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cidade" />
+
+    <EditText
+        android:id="@+id/editText_cidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite a ciade"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView_capacidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capacidade" />
+
+    <EditText
+        android:id="@+id/editText_capacidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite a capacidade de público"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSalvarLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSalvarLocal"
+            android:text="Salvar" />
+
+        <Button
+            android:id="@+id/btnVoltarLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickVoltarLocal"
+            android:text="Voltar" />
+
+        <Button
+            android:id="@+id/btnExcluirLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickExcluirLocal"
+            android:text="Excluir" />
+    </LinearLayout>
+</LinearLayout>
